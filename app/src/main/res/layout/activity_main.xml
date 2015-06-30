@@ -1,0 +1,261 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<RelativeLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent" android:layout_height="wrap_content">
+
+    <ImageView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/imageView6"
+        android:src="@drawable/background_3"
+        android:scaleType="centerCrop" />
+
+    <ScrollView
+        android:layout_width="match_parent" android:layout_height="wrap_content">
+
+
+        <LinearLayout
+            android:orientation="vertical"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:padding="15dp">
+
+            <LinearLayout
+                android:orientation="horizontal"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content">
+
+                <Button
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="&lt;"
+                    android:id="@+id/prev"
+                    android:layout_weight="0"
+                    android:onClick="prev"
+                    android:textColor="#feffffff"
+                    android:textSize="20sp" />
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Today Date"
+                    android:id="@+id/todayDate"
+                    android:layout_weight="1"
+                    android:gravity="center_horizontal"
+                    android:textColor="#feffffff"
+                    android:textSize="20sp" />
+
+                <Button
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text=">"
+                    android:id="@+id/next"
+                    android:layout_weight="0"
+                    android:onClick="next"
+                    android:textColor="#feffffff"
+                    android:textSize="20sp" />
+            </LinearLayout>
+
+            <LinearLayout
+                android:orientation="horizontal"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent">
+
+                <ImageView
+                    android:layout_width="80dp"
+                    android:layout_height="80dp"
+                    android:id="@+id/fajr"
+                    android:src="@drawable/fajr" />
+
+                <TextView
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:text="Fajr"
+                    android:id="@+id/fajrName"
+                    android:layout_weight="3"
+                    android:gravity="center_horizontal"
+                    android:layout_gravity="center"
+                    android:textSize="20sp"
+                    android:textColor="#feffffff" />
+
+                <TextView
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:text="hh:mm"
+                    android:id="@+id/fajrTime"
+                    android:layout_weight="1"
+                    android:layout_gravity="center"
+                    android:textSize="20sp"
+                    android:textColor="#feffffff" />
+            </LinearLayout>
+
+            <LinearLayout
+                android:orientation="horizontal"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent" >
+
+                <ImageView
+                    android:layout_width="80dp"
+                    android:layout_height="80dp"
+                    android:id="@+id/imageView"
+                    android:src="@drawable/sunrise" />
+
+                <TextView
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:text="Sunrise"
+                    android:id="@+id/sunriseName"
+                    android:layout_weight="3"
+                    android:gravity="center_horizontal"
+                    android:layout_gravity="center"
+                    android:textSize="20sp"
+                    android:textColor="#feffffff" />
+
+                <TextView
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:text="hh:mm"
+                    android:id="@+id/sunriseTime"
+                    android:layout_weight="1"
+                    android:layout_gravity="center"
+                    android:textSize="20sp"
+                    android:textColor="#feffffff" />
+            </LinearLayout>
+
+            <LinearLayout
+                android:orientation="horizontal"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent" >
+
+                <ImageView
+                    android:layout_width="80dp"
+                    android:layout_height="80dp"
+                    android:id="@+id/imageView2"
+                    android:src="@drawable/dhuhr" />
+
+                <TextView
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:text="Dhuhr"
+                    android:id="@+id/dhuhrName"
+                    android:layout_weight="3"
+                    android:gravity="center_horizontal"
+                    android:layout_gravity="center"
+                    android:textSize="20sp"
+                    android:textColor="#feffffff" />
+
+                <TextView
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:text="hh:mm"
+                    android:id="@+id/dhuhrTime"
+                    android:layout_weight="1"
+                    android:layout_gravity="center"
+                    android:textSize="20sp"
+                    android:textColor="#feffffff" />
+            </LinearLayout>
+
+            <LinearLayout
+                android:orientation="horizontal"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent" >
+
+                <ImageView
+                    android:layout_width="80dp"
+                    android:layout_height="80dp"
+                    android:id="@+id/imageView3"
+                    android:src="@drawable/asr" />
+
+                <TextView
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:text="Asr"
+                    android:id="@+id/asrName"
+                    android:layout_weight="3"
+                    android:gravity="center_horizontal"
+                    android:layout_gravity="center"
+                    android:textSize="20sp"
+                    android:textColor="#feffffff" />
+
+                <TextView
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:text="hh:mm"
+                    android:id="@+id/asrTime"
+                    android:layout_weight="1"
+                    android:layout_gravity="center"
+                    android:textSize="20sp"
+                    android:textColor="#feffffff" />
+            </LinearLayout>
+
+            <LinearLayout
+                android:orientation="horizontal"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent" >
+
+                <ImageView
+                    android:layout_width="80dp"
+                    android:layout_height="80dp"
+                    android:id="@+id/imageView4"
+                    android:src="@drawable/maghrib" />
+
+                <TextView
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:text="Maghrib"
+                    android:id="@+id/maghribName"
+                    android:layout_weight="3"
+                    android:gravity="center_horizontal"
+                    android:layout_gravity="center"
+                    android:textSize="20sp"
+                    android:textColor="#feffffff" />
+
+                <TextView
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:text="hh:mm"
+                    android:id="@+id/maghribTime"
+                    android:layout_weight="1"
+                    android:layout_gravity="center"
+                    android:textSize="20sp"
+                    android:textColor="#feffffff" />
+            </LinearLayout>
+
+            <LinearLayout
+                android:orientation="horizontal"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent" >
+
+                <ImageView
+                    android:layout_width="80dp"
+                    android:layout_height="80dp"
+                    android:id="@+id/imageView5"
+                    android:src="@drawable/isha" />
+
+                <TextView
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:text="Isha"
+                    android:id="@+id/ishaName"
+                    android:layout_weight="3"
+                    android:gravity="center_horizontal"
+                    android:layout_gravity="center"
+                    android:textSize="20sp"
+                    android:textColor="#feffffff" />
+
+                <TextView
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:text="hh:mm"
+                    android:id="@+id/ishaTime"
+                    android:layout_weight="1"
+                    android:layout_gravity="center"
+                    android:textSize="20sp"
+                    android:textColor="#feffffff" />
+            </LinearLayout>
+
+        </LinearLayout>
+    </ScrollView>
+
+</RelativeLayout>

@@ -1,0 +1,21 @@
+<?xml version="1.0" encoding="utf-8"?>
+<PreferenceScreen xmlns:android="http://schemas.android.com/apk/res/android">
+
+    <PreferenceCategory android:title="Location">
+
+        <ListPreference android:title = "City"
+            android:key="pref_city_key"
+            android:defaultValue="0"
+            android:entries="@array/cityName"
+            android:entryValues="@array/cityLocation" />
+
+    </PreferenceCategory>
+
+    <PreferenceCategory android:title="Timing" >
+        <CheckBoxPreference
+            android:key="pref_daylightSaving_key"
+            android:title="Daylight Saving"
+            android:defaultValue="false"/>
+    </PreferenceCategory>
+
+</PreferenceScreen>
